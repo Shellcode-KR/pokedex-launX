@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #222222;
+    padding: 1rem 1rem;
+    /*width: 100%;*/
+    /*margin: 2rem 1rem;*/
+}
+h1{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 1px 1px rgb(173, 58, 58);
+    -webkit-text-stroke: 0.5pX white;
+    
+}
+main{
+    display: flex;
+}
+.template{
+    position: absolute;
+    display: block;
+    max-width: 100vw;
+    max-height: 80vh;
+    left: 24vw;
+    /*margin: 0 auto;*/
+    z-index: -1;
+    
+}
+.left-side{
+    width: 50% ;
+    height: 80vh;
+    /*border-width: 1px;
+    border-style: solid;
+    border-color: #BD0F33;*/
+    
+    
+}
+.pokemon-imagen{
+    background: #DEDEDE;
+    width: 18vw;
+    height: 25vh;
+    margin-left: 27vw;
+    margin-top: 23vh;
+
+}
+#pokeimg{
+    width: 12vw;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    margin: 0 3vw;
+    
+}
+
+figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-left: 5vw;
+}
+
+.icon{
+    stroke: white;
+    width: 1rem;
+    height: 1rem;
+}
+.borrador{
+    stroke: #222222;
+}
+.search_button{
+    background: #222222;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    margin-top: 8vh;
+    margin-left: 26.2vw;
+    
+
+}
+.search_button:hover{
+    background-color: gray;
+}
+.entrada{
+    position: absolute;
+    margin-top: 1vh;
+    left: 29vw;
+
+}
+input{
+    width: 10vw;
+    height: 9vh;
+    background: #53A658;
+}
+.right-side{
+    width: 50%;
+    height: 80vh;
+    /*border-width: 1px;
+    border-style: solid;
+    border-color: #D91448;*/
+}
+.estadisticas{
+    margin-top: 23vh;
+    margin-left: 3vw;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    width: 19vw;
+    height: 18vh;
+    background-color: #032D29;
+}
+.other-stats{
+    margin-top: 3vh;
+    margin-left: 1vw;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    width: 8vw;
+    height: 6vh;
+    background-color: #032D29;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    margin-right: 1vw;
+    color: yellow;
+    
+    
+}
+.tipo{
+    color: white;
+}
+.junto{
+    display: inline-block;
+}
+.num-estadisticas{
+    margin-top: 6vh;
+    display: flex;
+    text-align: center;
+
+}
+
+.eraser-button{
+    background: #DEDEDE;
+    width: 3rem;
+    height: 2.3rem;
+    margin-top: 17.5vh;
+    margin-left: 4vw;
+}
+.final-stats{
+    display: flex;
+    margin-left: 3vw;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Pokedex Launch-X</h1>
+    </header>
+    <img class="template" src="./pokedex-template.jpg" alt="Diseño de la pokedex">
+    <main>
+        <section class="left-side">
+            <figure class="pokemon-imagen">
+                <img id="pokeimg" src="./pokebola.png" alt="pokemon" id="pokeimg" width="100 px"><br>
+                <figcaption id="idname"> </figcaption>
+            </figure>
+            <button onclick="pokeJson()" class="search_button" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon"  viewBox="0 0 24 24" stroke-width="1.5"  fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+            </button><br>
+            <div class="entrada">
+                <input type="text" placeholder="POKENAME"name="pokename" id="pokename">
+            </div>
+            
+        </section>   
+        <section class="right-side">
+            <article class="estadisticas">
+                <p class="junto">TIPO: </p>
+                <p id="tipo1" class="junto tipo">  </p>
+                <p id="tipo2" class="junto tipo">  </p>
+                <br>
+                
+                <p class="junto ">HABILIDADES: </p>
+                <P id="habilidad1" class="junto tipo"></P>
+                <p id="habilidad2" class="junto tipo"></p>
+                
+                <div class="num-estadisticas">
+                    <div>
+                        <p class="stats"> HP </p>
+                        <p id="hp" class="tipo">000</p>
+                    </div>
+                    <div>
+                        <P class="stats"> ATTACK </P>
+                        <P id="attack" class="tipo">000</P>
+                    </div>
+                    <div>
+                        <P class="stats"> DEFENCE </P>
+                        <P id="defence" class="tipo">000</P>
+                    </div>
+                    <div>
+                        <p class="stats"> S. A. </p>
+                        <p id="speciala" class="tipo">000</p>    
+                    </div>
+                    <div>
+                        <p class="stats"> S. D. </p>
+                        <p id="speciald" class="tipo">000</p>    
+                    </div>
+                    <div>
+                        <p class="stats"> SPEED </p>
+                        <p id="speed" class="tipo">000</p>
+                    </div>
+
+                </div>
+            </article>
+            <button onclick="limpiarimput()" class="eraser-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon borrador" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M19 19h-11l-4 -4a1 1 0 0 1 0 -1.41l10 -10a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41l-9 9" />
+                <line x1="18" y1="12.3" x2="11.7" y2="6" />
+              </svg>
+            </button>
+            <section class="final-stats">
+                <div class="other-stats">
+                    <p class="junto ">ALTURA: </p>
+                    <p id="altura" class="junto ">000</p>
+                </div>
+                <div class="other-stats">
+                    <P class="junto ">PESO: </P>
+                    <P id="peso" class="junto ">000</P>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <script src="./pokedex-lx.js"></script>
+    </footer>
+</body>
+</html>
